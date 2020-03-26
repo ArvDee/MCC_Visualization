@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>three.js - Magic number colloidal clusters</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			body {
+				background-color: #aaa;
+				position: absolute;
+				top: 0px;
+				margin: 0;
+				color: #FFF;
+			}
+			#info {
+				position: absolute;
+				text-align: center;
+				top: 0px;
+				width: 100%;
+    			padding: 0;
+				font-family: "Times New Roman", Times, serif;
+				font-size: 20px;
+			}
+			#MCCType {
+				position: absolute;
+				text-align: center;
+				top: 15%;
+				left: 10%;
+				font-family: "Times New Roman", Times, serif;
+				font-size: 30px;
+			}
+			#legend {
+				position: absolute;
+				top: 20%;
+				left: 10%;
+				z-index: 5;
+			}
+			#circle1 {
+				position: relative;
+				height: 20px;
+				width: 20px;
+				border-radius: 50%;
+    			background-color: rgb(144, 144, 204);
+			}
+			#circle2 {
+				position: relative;
+				height: 20px;
+				width: 20px;
+				border-radius: 50%;
+    			background-color: rgb(68, 126, 235);
+			}
+			#circle3 {
+				position: relative;
+				height: 20px;
+				width: 20px;
+				border-radius: 50%;
+    			background-color: rgb(104, 66, 245);
+			}
+			#circle4 {
+				position: relative;
+				height: 20px;
+				width: 20px;
+				border-radius: 50%;
+    			background-color: rgb(26, 116, 151);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="content">
+			<div id="info">Magic number colloidal clusters <br> Based on the structures reported by <a href="https://dx.doi.org/10.1038/s41467-018-07600-4" target="_blank" rel="noopener">Wang et al.</a></div>
+			<div id="MCCType">Cluster: 3<sub>0</sub></div>
+			<div id="legend">
+				<fieldset>
+				<legend>Color scheme:</legend>
+					<label><div id="circle1"></div>Mackay core</label>
+					<label><div id="circle2"></div>anti-Mackay faces</label>
+					<label><div id="circle3"></div>anti-Mackay edges</label>
+					<label><div id="circle4"></div>anti-Mackay vertices</label>
+				</fieldset>
+			</div>
+		</div>
+		<script src="dist/main.js"></script>
+	</body>
+</html>
